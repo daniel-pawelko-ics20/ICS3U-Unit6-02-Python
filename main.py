@@ -19,7 +19,7 @@ def main():
 
     # get biggest/process
     for num in arr:
-        print(f"The random number {num + 1} is: {num}")
+        print(f"The random number is: {num}")
         if num > biggest:
             biggest = num
 
