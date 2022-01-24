@@ -14,7 +14,8 @@ def main():
     arr = [randint(1, 100) for rand in range(10)]
 
     # define biggest variable
-    biggest = arr = 0
+    biggest = 0
+    arr = [randint(1, 100) for rand in range(10)]
 
     # get biggest/process
     for num in arr:
