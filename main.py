@@ -7,24 +7,30 @@
 from random import randint
 
 
+def biggest(arr):
+    bigst = 0
+
+    # get biggest/process
+    for num in arr:
+        print(f"The random number is: {num}")
+        if num > bigst:
+            bigst = num
+
+    # return biggest
+    return bigst
+
+
 def main():
     # main function for max number
 
     # create array with 10 random numbers/process
     arr = [randint(1, 100) for rand in range(10)]
 
-    # define biggest variable
-    biggest = 0
-    arr = [randint(1, 100) for rand in range(10)]
-
-    # get biggest/process
-    for num in arr:
-        print(f"The random number is: {num}")
-        if num > biggest:
-            biggest = num
+    # calling function
+    bigst = biggest(arr)
 
     # output
-    print(f"\nBiggest number is {biggest}")
+    print(f"\nBiggest number is {bigst}")
 
     # done
     print("")
